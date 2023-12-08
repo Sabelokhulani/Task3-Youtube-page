@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    body {
+      padding-top: 56px; /* Adjust according to your navbar height */
+    }
+    .sidebar {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1000;
+      padding-top: 56px; /* Adjust according to your navbar height */
+      padding-right: 10px;
+      padding-left: 10px;
+      background-color: #f8f9fa; /* Set your desired background color */
+    }
+    .sidebar-sticky {
+      position: relative;
+      top: 0;
+      height: calc(100vh - 56px); /* Adjust according to your navbar height */
+      padding-top: 20px;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+  </style>
+  <title>Your Page Title</title>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Navigation Bar -->
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Services
+            </a>
+          </li>
+          <!-- Add more navigation items as needed -->
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+      <!-- Your page content goes here -->
+    </main>
+  </div>
+</div>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+To create a transparent, gray hover horizontal navigation bar with a search input, you can use HTML and CSS. Here's a basic example:
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: rgba(169, 169, 169, 0.5); /* Gray with transparency */
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #ddd; /* Light gray on hover */
+      color: black;
+    }
+
+    nav input[type="text"] {
+      float: right;
+      padding: 10px;
+      margin: 15px;
+      border: none;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <input type="text" placeholder="Search...">
+  </nav>
+
+</body>
+

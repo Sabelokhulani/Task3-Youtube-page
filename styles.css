@@ -1,0 +1,27 @@
+body {
+  padding-top: 56px;
+  margin: 400px; 
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  padding-top: 10px; 
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: #f8f9fa; 
+}
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 56px);
+  padding-top: 20px;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+.img1{
+  position:absolute;
+  top: 20px;
+}
